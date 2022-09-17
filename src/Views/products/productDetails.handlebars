@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="/css/productDetail.css">
+
+{{> navbar}}
+
+<div class="container">
+    <div id="itemDetailContainer">
+        <div id="itemDetailImgContainer">
+            <img id="itemDetailImage" src={{product.thumbnail}} alt={{product.description}} />
+        </div>
+
+        <div id="itemDetails">
+            <span id="productId" hidden>{{productId}}</span><h2>{{product.title}}</h2>
+            <p>Descripción: {{product.description}}</p>
+            {{#if product.stock}}
+                <p>Stock: <span id="stock">{{product.stock}}</span></p>
+            {{else}}
+                <p>Stock: <span style="background-color: red;">Sin stock</span></p>
+            {{/if}}
+            <p>Precio: USD {{product.price}}</p>
+
+            <div class="container" style="display:flex; justifyContent:center; marginBottom: 15">
+                <div class="row justify-content-center border border-dark rounded p-3">
+                    <div class="row p-2">
+                        <!--Botón que resta al contador, se desactiva si la cantidad actual es menor o igual a la cantidad inicial-->
+                        <button type="button" id="minusBtn" class="col-2 btn btn-outline-dark" disabled>-</button>
+                        <span id="count" class="col-8 text-center">{{count}}</span>
+                        {{!--Botón que suma al contador, se desactiva si la cantidad actual es mayor o igual al stock--}}
+                        <button type="button" id="plusBtn" class="col-2 btn btn-outline-dark">+</button>
+                    </div>
+                    <div>
+                        {{!--Botón que agrega al carrito, se desactiva si no hay stock o si la cantidad actual es menor o igual a 0--}}
+                        <button type="submit" form="sendToCart" class="col-12 btn btn-outline-dark">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            {{!-- Formulario para enviar el producto al carrito --}}
+            <form id="sendToCart" action="/cart/products" method="post">
+                <input type="hidden" name="id" value={{product.id}}>
+                <input type="hidden" name="quantity" id="quantity" value={{count}}>
+            </form>
+        
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/itemDetails.js"></script>

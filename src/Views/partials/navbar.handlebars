@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="/css/navbar.css">
+
+
+<header id="App-header">
+    <nav class="navbar navbar-expand-lg container-fluid navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <button class="btn">Home</button>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end me-3" id="navbarNav">
+                <ul class="navbar-nav row justify-content-end text-center align-middle">
+                    <li class="nav-item col-4 dropdown align-middle">
+                        <a class="nav-link text-black dropdown-troggle align-middle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/products">Listado</a></li>
+                            {{#if (isAdmin role)}}
+                                <li><a class="dropdown-item" href="/products/create">Crear</a></li>
+                            {{/if}}
+                        </ul>
+                    </li>
+                    <li class="nav-item col-4">
+                        <a class="nav-link text-black" href="/cart">Carrito</a>
+                    </li>
+
+                    {{#if name}}
+                        <li class="nav-item col-4 dropdown">
+                            <a class="nav-link text-black dropdown-troggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="rounded-circle" width="25%" src={{concat "/Storage/" avatar}} alt="Avatar">
+                                <strong id="userName">{{name}}</strong>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/userInfo">Perfil</a></li>
+                                <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                            </ul>
+                        </li>
+                    {{else}}
+                        <li class="nav-item col-3">
+                            <a class="nav-link text-black" href="/login">Login</a>
+                        </li>
+                    {{/if}}
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

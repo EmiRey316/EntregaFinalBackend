@@ -1,0 +1,898 @@
+{
+  error: Error: products validation failed: timestamp: Path `timestamp` is required., stock: Path `stock` is required., price: Path `price` is required., thumbnail: Path `thumbnail` is required., code: Path `code` is required., description: Path `description` is required., title: Path `title` is required.
+      at ValidationError.inspect (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\error\validation.js:48:26)
+      at formatValue (node:internal/util/inspect:782:19)
+      at formatProperty (node:internal/util/inspect:1819:11)
+      at formatRaw (node:internal/util/inspect:1030:9)
+      at formatValue (node:internal/util/inspect:817:10)
+      at inspect (node:internal/util/inspect:347:10)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\winston\lib\winston\logger.js:313:29)
+      at DerivedLogger.Transform._read (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\readable-stream\lib\_stream_transform.js:177:10) {
+    errors: {
+      timestamp: ValidatorError: Path `timestamp` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `timestamp` is required.',
+          type: 'required',
+          path: 'timestamp',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'timestamp',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      stock: ValidatorError: Path `stock` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `stock` is required.',
+          type: 'required',
+          path: 'stock',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'stock',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      price: ValidatorError: Path `price` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `price` is required.',
+          type: 'required',
+          path: 'price',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'price',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      thumbnail: ValidatorError: Path `thumbnail` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `thumbnail` is required.',
+          type: 'required',
+          path: 'thumbnail',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'thumbnail',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      code: ValidatorError: Path `code` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `code` is required.',
+          type: 'required',
+          path: 'code',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'code',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      description: ValidatorError: Path `description` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `description` is required.',
+          type: 'required',
+          path: 'description',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'description',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      title: ValidatorError: Path `title` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `title` is required.',
+          type: 'required',
+          path: 'title',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'title',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      }
+    },
+    _message: 'products validation failed'
+  },
+  level: 'error',
+  message: 'No se pudo guardar en base',
+  timestamp: '2022-07-19T04:13:20.768Z'
+}
+{
+  error: Error: products validation failed: timestamp: Path `timestamp` is required., stock: Path `stock` is required., price: Path `price` is required., thumbnail: Path `thumbnail` is required., code: Path `code` is required., description: Path `description` is required., title: Path `title` is required.
+      at ValidationError.inspect (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\error\validation.js:48:26)
+      at formatValue (node:internal/util/inspect:782:19)
+      at formatProperty (node:internal/util/inspect:1819:11)
+      at formatRaw (node:internal/util/inspect:1030:9)
+      at formatValue (node:internal/util/inspect:817:10)
+      at inspect (node:internal/util/inspect:347:10)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\winston\lib\winston\logger.js:313:29)
+      at DerivedLogger.Transform._read (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\readable-stream\lib\_stream_transform.js:177:10) {
+    errors: {
+      timestamp: ValidatorError: Path `timestamp` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `timestamp` is required.',
+          type: 'required',
+          path: 'timestamp',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'timestamp',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      stock: ValidatorError: Path `stock` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `stock` is required.',
+          type: 'required',
+          path: 'stock',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'stock',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      price: ValidatorError: Path `price` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `price` is required.',
+          type: 'required',
+          path: 'price',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'price',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      thumbnail: ValidatorError: Path `thumbnail` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `thumbnail` is required.',
+          type: 'required',
+          path: 'thumbnail',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'thumbnail',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      code: ValidatorError: Path `code` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `code` is required.',
+          type: 'required',
+          path: 'code',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'code',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      description: ValidatorError: Path `description` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `description` is required.',
+          type: 'required',
+          path: 'description',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'description',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      title: ValidatorError: Path `title` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `title` is required.',
+          type: 'required',
+          path: 'title',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'title',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      }
+    },
+    _message: 'products validation failed'
+  },
+  level: 'error',
+  message: 'No se pudo guardar en base',
+  timestamp: '2022-07-19T04:22:44.611Z'
+}
+{
+  error: Error: products validation failed: timestamp: Path `timestamp` is required., stock: Path `stock` is required., price: Path `price` is required., thumbnail: Path `thumbnail` is required., code: Path `code` is required., description: Path `description` is required., title: Path `title` is required.
+      at ValidationError.inspect (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\error\validation.js:48:26)
+      at formatValue (node:internal/util/inspect:782:19)
+      at formatProperty (node:internal/util/inspect:1819:11)
+      at formatRaw (node:internal/util/inspect:1030:9)
+      at formatValue (node:internal/util/inspect:817:10)
+      at inspect (node:internal/util/inspect:347:10)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\winston\lib\winston\logger.js:313:29)
+      at DerivedLogger.Transform._read (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\readable-stream\lib\_stream_transform.js:177:10) {
+    errors: {
+      timestamp: ValidatorError: Path `timestamp` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `timestamp` is required.',
+          type: 'required',
+          path: 'timestamp',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'timestamp',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      stock: ValidatorError: Path `stock` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `stock` is required.',
+          type: 'required',
+          path: 'stock',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'stock',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      price: ValidatorError: Path `price` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `price` is required.',
+          type: 'required',
+          path: 'price',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'price',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      thumbnail: ValidatorError: Path `thumbnail` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `thumbnail` is required.',
+          type: 'required',
+          path: 'thumbnail',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'thumbnail',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      code: ValidatorError: Path `code` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `code` is required.',
+          type: 'required',
+          path: 'code',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'code',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      description: ValidatorError: Path `description` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `description` is required.',
+          type: 'required',
+          path: 'description',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'description',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      title: ValidatorError: Path `title` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `title` is required.',
+          type: 'required',
+          path: 'title',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'title',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      }
+    },
+    _message: 'products validation failed'
+  },
+  level: 'error',
+  message: 'No se pudo guardar en base',
+  timestamp: '2022-07-19T04:23:55.082Z'
+}
+{
+  error: Error: products validation failed: timestamp: Path `timestamp` is required., stock: Path `stock` is required., price: Path `price` is required., thumbnail: Path `thumbnail` is required., code: Path `code` is required., description: Path `description` is required., title: Path `title` is required.
+      at ValidationError.inspect (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\error\validation.js:48:26)
+      at formatValue (node:internal/util/inspect:782:19)
+      at formatProperty (node:internal/util/inspect:1819:11)
+      at formatRaw (node:internal/util/inspect:1030:9)
+      at formatValue (node:internal/util/inspect:817:10)
+      at inspect (node:internal/util/inspect:347:10)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\winston\lib\winston\logger.js:313:29)
+      at DerivedLogger.Transform._read (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\readable-stream\lib\_stream_transform.js:177:10) {
+    errors: {
+      timestamp: ValidatorError: Path `timestamp` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `timestamp` is required.',
+          type: 'required',
+          path: 'timestamp',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'timestamp',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      stock: ValidatorError: Path `stock` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `stock` is required.',
+          type: 'required',
+          path: 'stock',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'stock',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      price: ValidatorError: Path `price` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `price` is required.',
+          type: 'required',
+          path: 'price',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'price',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      thumbnail: ValidatorError: Path `thumbnail` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `thumbnail` is required.',
+          type: 'required',
+          path: 'thumbnail',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'thumbnail',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      code: ValidatorError: Path `code` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `code` is required.',
+          type: 'required',
+          path: 'code',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'code',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      description: ValidatorError: Path `description` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `description` is required.',
+          type: 'required',
+          path: 'description',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'description',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      title: ValidatorError: Path `title` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `title` is required.',
+          type: 'required',
+          path: 'title',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'title',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      }
+    },
+    _message: 'products validation failed'
+  },
+  level: 'error',
+  message: 'No se pudo guardar en base',
+  timestamp: '2022-07-19T04:23:57.599Z'
+}
+{
+  error: Error: products validation failed: timestamp: Path `timestamp` is required.
+      at ValidationError.inspect (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\error\validation.js:48:26)
+      at formatValue (node:internal/util/inspect:782:19)
+      at formatProperty (node:internal/util/inspect:1819:11)
+      at formatRaw (node:internal/util/inspect:1030:9)
+      at formatValue (node:internal/util/inspect:817:10)
+      at inspect (node:internal/util/inspect:347:10)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\winston\lib\winston\logger.js:313:29)
+      at DerivedLogger.Transform._read (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\readable-stream\lib\_stream_transform.js:177:10) {
+    errors: {
+      timestamp: ValidatorError: Path `timestamp` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `timestamp` is required.',
+          type: 'required',
+          path: 'timestamp',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'timestamp',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      }
+    },
+    _message: 'products validation failed'
+  },
+  level: 'error',
+  message: 'No se pudo guardar en base',
+  timestamp: '2022-07-19T05:42:13.052Z'
+}
+{
+  error: TypeError: Cannot read properties of null (reading 'products')
+      at getCart (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\src\Components\Cart\cartController.js:38:38)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  message: 'Error al obtener el carrito',
+  timestamp: '2022-07-20T03:20:30.870Z'
+}
+{
+  level: 'error',
+  message: "Error al obtener el carrito Cannot read properties of null (reading 'products')",
+  stack: "TypeError: Cannot read properties of null (reading 'products')\n" +
+    '    at getCart (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\src\\Components\\Cart\\cartController.js:38:38)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  timestamp: '2022-07-20T03:21:29.961Z'
+}
+{
+  level: 'error',
+  message: "Error al obtener el carrito Cannot read properties of null (reading 'products')",
+  stack: "TypeError: Cannot read properties of null (reading 'products')\n" +
+    '    at getCart (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\src\\Components\\Cart\\cartController.js:38:38)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  timestamp: '2022-07-20T03:21:30.161Z'
+}
+{
+  error: Error: products validation failed: stock: Path `stock` is required., price: Path `price` is required., thumbnail: Path `thumbnail` is required., code: Path `code` is required., description: Path `description` is required., title: Path `title` is required.
+      at ValidationError.inspect (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\error\validation.js:48:26)
+      at formatValue (node:internal/util/inspect:782:19)
+      at formatProperty (node:internal/util/inspect:1819:11)
+      at formatRaw (node:internal/util/inspect:1030:9)
+      at formatValue (node:internal/util/inspect:817:10)
+      at inspect (node:internal/util/inspect:347:10)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\winston\lib\winston\logger.js:313:29)
+      at DerivedLogger.Transform._read (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\readable-stream\lib\_stream_transform.js:177:10) {
+    errors: {
+      stock: ValidatorError: Path `stock` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `stock` is required.',
+          type: 'required',
+          path: 'stock',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'stock',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      price: ValidatorError: Path `price` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `price` is required.',
+          type: 'required',
+          path: 'price',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'price',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      thumbnail: ValidatorError: Path `thumbnail` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `thumbnail` is required.',
+          type: 'required',
+          path: 'thumbnail',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'thumbnail',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      code: ValidatorError: Path `code` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `code` is required.',
+          type: 'required',
+          path: 'code',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'code',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      description: ValidatorError: Path `description` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `description` is required.',
+          type: 'required',
+          path: 'description',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'description',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      },
+      title: ValidatorError: Path `title` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaString.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `title` is required.',
+          type: 'required',
+          path: 'title',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'title',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      }
+    },
+    _message: 'products validation failed'
+  },
+  level: 'error',
+  message: 'No se pudo guardar en base',
+  timestamp: '2022-07-21T03:29:36.097Z'
+}
+{
+  error: Error: carts validation failed: user: Path `user` is required.
+      at ValidationError.inspect (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\error\validation.js:48:26)
+      at formatValue (node:internal/util/inspect:782:19)
+      at formatProperty (node:internal/util/inspect:1819:11)
+      at formatRaw (node:internal/util/inspect:1030:9)
+      at formatValue (node:internal/util/inspect:817:10)
+      at inspect (node:internal/util/inspect:347:10)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\winston\lib\winston\logger.js:313:29)
+      at DerivedLogger.Transform._read (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\readable-stream\lib\_stream_transform.js:177:10) {
+    errors: {
+      user: ValidatorError: Path `user` is required.
+          at validate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1330:13)
+          at SchemaNumber.SchemaType.doValidate (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\schematype.js:1314:7)
+          at C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\node_modules\mongoose\lib\document.js:2746:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `user` is required.',
+          type: 'required',
+          path: 'user',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'user',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      }
+    },
+    _message: 'carts validation failed'
+  },
+  level: 'error',
+  message: 'No se pudo guardar en base',
+  timestamp: '2022-07-21T04:21:46.498Z'
+}
+{
+  error: TypeError: Cannot read properties of null (reading 'id')
+      at addProductToCart (C:\Users\erey\OneDrive\Desktop\Coder House\Backend\Proyecto\Entrega 3\src\Components\Cart\cartController.js:57:50)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5),
+  level: 'error',
+  message: 'Error al agregar producto al carrito',
+  timestamp: '2022-07-21T04:21:48.002Z'
+}
+{
+  level: 'error',
+  message: 'Error al obtener el carrito productsData is not defined',
+  stack: 'ReferenceError: productsData is not defined\n' +
+    '    at getCart (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\src\\Components\\Cart\\cartController.js:55:33)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  timestamp: '2022-07-21T05:54:37.895Z'
+}
+{
+  status: 400,
+  code: 63007,
+  moreInfo: 'https://www.twilio.com/docs/errors/63007',
+  details: undefined,
+  level: 'error',
+  message: 'Error al enviar mensaje Twilio could not find a Channel with the specified From address',
+  stack: 'Error: Twilio could not find a Channel with the specified From address\n' +
+    '    at success (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\twilio\\lib\\base\\Version.js:135:15)\n' +
+    '    at Promise_then_fulfilled (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\q\\q.js:766:44)\n' +
+    '    at Promise_done_fulfilled (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\q\\q.js:835:31)\n' +
+    '    at Fulfilled_dispatch [as dispatch] (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\q\\q.js:1229:9)\n' +
+    '    at Pending_become_eachMessage_task (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\q\\q.js:1369:30)\n' +
+    '    at RawTask.call (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\asap\\asap.js:40:19)\n' +
+    '    at flush (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\asap\\raw.js:50:29)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  timestamp: '2022-07-23T01:01:16.780Z'
+}
+{
+  status: 400,
+  code: 21211,
+  moreInfo: 'https://www.twilio.com/docs/errors/21211',
+  details: undefined,
+  level: 'error',
+  message: "Error al enviar mensaje The 'To' number +598578789 is not a valid phone number.",
+  stack: "Error: The 'To' number +598578789 is not a valid phone number.\n" +
+    '    at success (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\twilio\\lib\\base\\Version.js:135:15)\n' +
+    '    at Promise_then_fulfilled (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\q\\q.js:766:44)\n' +
+    '    at Promise_done_fulfilled (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\q\\q.js:835:31)\n' +
+    '    at Fulfilled_dispatch [as dispatch] (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\q\\q.js:1229:9)\n' +
+    '    at Pending_become_eachMessage_task (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\q\\q.js:1369:30)\n' +
+    '    at RawTask.call (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\asap\\asap.js:40:19)\n' +
+    '    at flush (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\asap\\raw.js:50:29)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  timestamp: '2022-07-23T01:01:16.793Z'
+}
+{
+  status: 400,
+  code: 63007,
+  moreInfo: 'https://www.twilio.com/docs/errors/63007',
+  details: undefined,
+  level: 'error',
+  message: 'Error al enviar mensaje Twilio could not find a Channel with the specified From address',
+  stack: 'Error: Twilio could not find a Channel with the specified From address\n' +
+    '    at success (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\twilio\\lib\\base\\Version.js:135:15)\n' +
+    '    at Promise_then_fulfilled (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\q\\q.js:766:44)\n' +
+    '    at Promise_done_fulfilled (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\q\\q.js:835:31)\n' +
+    '    at Fulfilled_dispatch [as dispatch] (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\q\\q.js:1229:9)\n' +
+    '    at Pending_become_eachMessage_task (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\q\\q.js:1369:30)\n' +
+    '    at RawTask.call (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\asap\\asap.js:40:19)\n' +
+    '    at flush (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\asap\\raw.js:50:29)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  timestamp: '2022-07-23T19:24:45.719Z'
+}
+{
+  level: 'error',
+  message: 'Error al cargar códigos de países this.model.findMany is not a function',
+  stack: 'TypeError: this.model.findMany is not a function\n' +
+    '    at CountryCodesDao.findCodes (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\src\\Container\\DAOs\\countryCodes\\index.js:9:37)\n' +
+    '    at get (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\src\\Components\\Session\\Registration\\registrationController.js:5:52)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at isLogged (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\src\\Components\\Middlewares\\index.js:16:5)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\erey\\OneDrive\\Desktop\\Coder House\\Backend\\Proyecto\\Entrega 3\\node_modules\\express\\lib\\router\\index.js:281:22',
+  timestamp: '2022-07-23T21:38:26.058Z'
+}
